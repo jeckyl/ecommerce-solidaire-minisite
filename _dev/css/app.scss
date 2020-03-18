@@ -1,1 +1,53 @@
+@import "var";
 @import "~bootstrap/scss/bootstrap";
+
+.c-card{
+  margin-top: 50px;
+  padding: $spacer*2;
+}
+.c-card__content{
+  background: #fff;
+  padding: $spacer*2 $spacer;
+
+}
+.c-card__img{
+  background: url('../img/bg.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 20vh;
+  //height: 100%;
+}
+///responsive
+@include media-breakpoint-up(lg) {
+  .u-left-radius{
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+  }
+  .u-right-radius{
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+  }
+
+}
+@include media-breakpoint-down(lg) {
+.c-card__header{
+
+}
+  .c-card__img{
+min-height: 200px}
+}
+@include media-breakpoint-down(sm) {
+  .c-card{
+    margin-top: 20px;
+    padding: $spacer*2 $spacer;
+  }
+}
+
+///////utilities
+.u-bg-w{
+  background: #fff;
+}
+
+
+
+
+

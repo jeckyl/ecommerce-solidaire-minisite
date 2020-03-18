@@ -6,7 +6,7 @@ module.exports = {
     // watch: true,
 
     entry: {
-        index: ['./js/app.js','./css/app.scss']
+        app: ['./js/app.js','./css/app.scss']
 
     },
     output: {
