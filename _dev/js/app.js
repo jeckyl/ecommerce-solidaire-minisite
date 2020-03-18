@@ -1,3 +1,6 @@
+import 'bootstrap/js/src/util';
+import 'bootstrap/js/src/modal';
+
 $("#contact-form").submit(function(e) {
 
     e.preventDefault(); // avoid to execute the actual submit of the form.

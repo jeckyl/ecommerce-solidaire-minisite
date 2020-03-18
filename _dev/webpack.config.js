@@ -50,10 +50,10 @@ module.exports = {
                 ]
             }
         ]
-    }
-    // externals: {
-    //     $: '$',
-    //     jquery: 'jQuery',
+    },
+    externals: {
+        $: '$',
+        jquery: 'jQuery'
 
-    // }
+    }
 };
