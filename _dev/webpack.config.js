@@ -1,12 +1,11 @@
 const path = require('path');
 const UnCSSPlugin = require('uncss-webpack-plugin');
 
-
 module.exports = {
     // watch: true,
 
     entry: {
-        app: ['./js/app.js','./css/app.scss']
+        app: ['./js/app.js', './css/app.scss']
 
     },
     output: {
@@ -50,10 +49,5 @@ module.exports = {
                 ]
             }
         ]
-    },
-    externals: {
-        $: '$',
-        jquery: 'jQuery'
-
     }
 };

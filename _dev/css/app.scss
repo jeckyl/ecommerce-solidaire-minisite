@@ -62,8 +62,17 @@ min-height: 200px}
   border-radius: 0;
 }
 .form-control:focus, .custom-select:focus {
-  background-color: transparent;
+  background-color: $primary;
   border: none;
   border-bottom: 2px solid $white;
   border-radius: 0;
+}
+
+#intro {
+  background-image: linear-gradient(to top, rgba(0,0,0,0.71), rgba(0,0,0,0.71)), url("../img/bg.jpg");
+  background-size: auto, cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: center;
 }

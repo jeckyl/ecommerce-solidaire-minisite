@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="fr">
+<html class="no-js h-100" lang="fr">
 <head>
     <meta charset="utf-8">
     <title>E-Commerce Solidaire sous Prestashop</title>
@@ -9,7 +9,7 @@
     <link rel="preload" href="assets/app.js" as="script">
     <link rel="stylesheet" href="assets/app.css">
 </head>
-<body>
+<body class="h-100">
 <!--[if IE]>
 <p class="alert alert-warning">
     Vous utilisez un navigateur <strong>obsolète</strong>.
@@ -17,13 +17,20 @@
 </p>
 <![endif]-->
 
-<main>
+<main class="h-100">
+    <section id="intro" class="h-100 w-100 d-flex align-items-center">
+        <div class="container-lg pt-5">
+            <div class="d-flex flex-column">
+                <h1 class="text-primary display-2 bg-white py-2 px-5 d-inline text-right ml-auto rounded">E-Commerce Solidaire</h1>
+                <div class="ml-auto py-2 text-white">Par la communauté Friends-Of-Presta</div>
+            </div>
+        </div>
+    </section>
+
     <section class="container-fluid c-card">
         <div class="row">
             <div class="col-xl-8 col-12 u-bg-w u-left-radius order-1 order-xl-0">
                 <div class="c-card__content">
-                    <h1 class="c-card__header">Ecommerce solidaire</h1>
-                    <p class="text-muted">PAR LA COMMUNAUTÉ FRIENDS-OF-PRESTA</p>
                     <p class="lead">La communauté Friends-of-Presta, constituée d’experts Prestashop, se mobilise pour
                         offrir aux TPE impactées par le confinement lié COVID-19 un site de vente en ligne,
                         gratuitement.
@@ -166,8 +173,6 @@
     </section>
 </main>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 <script src="assets/app.js"></script>
 </body>
 </html>

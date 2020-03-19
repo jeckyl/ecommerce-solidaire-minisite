@@ -1,5 +1,13 @@
-import 'bootstrap/js/src/util';
-import 'bootstrap/js/src/modal';
+window._ = require('lodash');
+
+/**
+ * We'll load jQuery and the Bootstrap jQuery plugin which provides support
+ * for JavaScript based Bootstrap features such as modals and tabs. This
+ * code may be modified to fit the specific needs of your application.
+ */
+
+//window.Popper = require('popper.js').default;
+window.$ = window.jQuery = require('jquery');
 
 // Load needs validation form
 (function() {
@@ -22,27 +30,25 @@ import 'bootstrap/js/src/modal';
     }, false);
 })();
 
-$("#contact-form").submit(function(e) {
+$(document).ready(function () {
+    $("#contact-form").submit(function (e) {
+        e.preventDefault(); // avoid to execute the actual submit of the form.
 
-    e.preventDefault(); // avoid to execute the actual submit of the form.
+        var form = $(this);
+        var url = form.attr('action');
 
-    var form = $(this);
-    var url = form.attr('action');
-
-    $.ajax({
-        type: "POST",
-        url: url,
-        data: form.serialize(), // serializes the form's elements.
-        success: function(msg)
-        {
-            if (msg === 'success') {
-                $('#submit').text('Le formulaire a été envoyé').addClass('btn-success');
-            } else {
-                $('#submit').text('Une erreur est survenue').addClass('btn-danger');
-                alert(data); // show response from the php script.
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: form.serialize(), // serializes the form's elements.
+            success: function (msg) {
+                if (msg === 'success') {
+                    $('#submit').text('Le formulaire a été envoyé').addClass('btn-success');
+                } else {
+                    $('#submit').text('Une erreur est survenue').addClass('btn-danger');
+                    alert(data); // show response from the php script.
+                }
             }
-        }
+        });
     });
-
-
 });
