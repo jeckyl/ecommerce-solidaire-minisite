@@ -1,109 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Mini-site ecommerceSoldaire</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>E-Commerce Solidaire sous PrestaShop</title>
+    <meta name="description" content="Action de solidarité pour proposer sites de vente en ligne pour les tpe françaises">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="manifest" href="site.webmanifest">-->
+    <!--<link rel="apple-touch-icon" href="icon.png">-->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="assets/app.css">
+
+    <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
-<div class="container">
-    <img src="img/ecommerceSolidaireFOP.png" class="mx-auto d-block"/>
-    <h1 class="text-center">TITRE</h1>
-    <p>Introduction</p>
-    <form method="post" action="mail.php" id="contact-form">
-        <div class="form-group row">
-            <label for="nom" class="col-sm-2 col-form-label">Nom</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom">
+<!--[if IE]>
+<p class="alert alert-warning">Vous utilisez un navigateur <strong>obsolete</strong>. Merci de <a href="https://browsehappy.com/">mettre à jour</a> votreto improve your experience and security.</p>
+<![endif]-->
+
+<main class="container-fluid">
+<section class="c-card">
+    <div class="row">
+        <div class="col-xl-8 col-12 u-bg-w u-left-radius order-1 order-xl-0">
+            <div class="c-card__content">
+    <h1 class="c-card__header">Ecommerce solidaire</h1>
+    <p class="text-muted">PAR LA COMMUNAUTÉ FRIENDS-OF-PRESTA</p>
+    <p class="lead">La communauté Friends-of-Presta, constituée d’experts Prestashop, se mobilise pour offrir aux TPE impactées par le confinement lié COVID-19 un site de vente en ligne, gratuitement.
+        Commerçants, créateurs, artisans qui ont fermé l’accueil au public, vous pouvez ainsi continuer à servir votre clientèle et proposer vos produits en livraison ou en retrait.</p>
+
+                <h2>Un site ecommerce pour les tpe</h2>
+                <p>La communauté Friends-of-Presta constituée d’experts Prestashop se mobilise pour offrir aux TPE impactées par le confinement lié COVID-19 un site de vente en ligne, gratuitement.</p>
+
+                <p>Commerçants, créateurs, artisans qui ont fermé l’accueil au public peuvent ainsi continuer à servir leur clientèle et proposer leurs produits en livraison ou en retrait.</p>
+
+
+                <h2>Un site gratuit de première nécessité</h2>
+                <p>Nous proposons un site aux fonctionnalités essentielles :</p>
+                <ul>
+                <li>La plate-forme de vente en ligne Prestashop</li>
+                <li>Une adresse du type maboutique.ecommerce-solidaire.fr</li>
+                <li>Un hébergement web</li>
+                <li>Une design basique</li>
+                <li>Un mode de paiement</li>
+                <li>Un mode de livraison et retrait sur place</li>
+                <li>L'accompagnement initial par l’un de nos volontaires bénévoles</li>
+                </ul>
+
+                <h2>Quelles sont les conditions ?</h2>
+                <p>Nous souhaitons aider en priorité les tpe françaises touchées par le confinement :</p>
+                <ul>
+                <li>Société avec SIREN de 0 à 10 salariés</li>
+                <li>Siège social en France</li>
+                <li>Impactée par le confinement</li>
+                <li>Un catalogue produit prêt pour la vente en ligne ou en retrait</li>
+                </ul>
+
+                <h2>Qui sommes-nous ?</h2>
+                <ul>
+                    <li>...</li>
+                    <li>....</li>
+                </ul>
+                <h2>Nos partenaires</h2>
+                <ul>
+                <li>Payplug : pour le paiement CB : abonnement pro offert le premier mois</li>
+                    <li>772424.com pour le serveur offert</li>
+                </ul>
+
+
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Je souhaite bénéficier de l'aide</button>
+
             </div>
         </div>
-        <div class="form-group row">
-            <label for="prenom" class="col-sm-2 col-form-label">Prénom</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom">
+        <div class="col-12 col-xl-4 c-card__img u-right-radius order-0 order-xl-1">
+        </div>
+    </div>
+</section>
+</main>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Formualire</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="mail.php" id="contact-form">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">annuler</button>
+                <button type="submit" id="submit" class="btn btn-primary">Envoyer</button>
             </div>
         </div>
-        <div class="form-group row">
-            <label for="telephone" class="col-sm-2 col-form-label">Téléphone</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Téléphone">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="email" class="col-sm-2 col-form-label">E-Mail</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="societe" class="col-sm-2 col-form-label">Société</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="societe" name="societe" placeholder="Société">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="siren" class="col-sm-2 col-form-label">Siren</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="siren" name="siren" placeholder="Siren">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="salaries" class="col-sm-2 col-form-label">Nb de salariés</label>
-            <div class="col-sm-10">
-                <input type="number" class="form-control" id="salaries" name="salaries" placeholder="Nb de salariés">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="statut" class="col-sm-2 col-form-label">Statut</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="statut" name="statut" placeholder="Statut">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="adresse" class="col-sm-2 col-form-label">Adresse</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="adresse" name="adresse" placeholder="Adresse">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="cp" class="col-sm-2 col-form-label">Code Postal</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="cp" name="cp" placeholder="Code Postal">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="ville" class="col-sm-2 col-form-label">Ville</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="ville" name="ville" placeholder="Ville">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="pays" class="col-sm-2 col-form-label">Pays</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="pays" name="pays" placeholder="Pays">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="commentaires" class="col-sm-2 col-form-label">Parlez-nous de vous</label>
-            <div class="col-sm-10">
-                <textarea class="form-control" id="commentaires" name="commentaires" rows="5" placeholder="Parlez-nous de vous"></textarea>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-auto">
-                <button type="submit" id="submit" class="btn btn-primary mb-2">Envoyer</button>
-            </div>
-        </div>
-    </form>
+    </div>
 </div>
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="assets/app.js"></script>
+
+
 </body>
+
 </html>

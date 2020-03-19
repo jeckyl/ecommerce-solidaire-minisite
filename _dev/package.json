@@ -1,0 +1,30 @@
+{
+  "name": "prestarocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production --watch",
+    "watch": "webpack --watch --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.4.1",
+    "css-loader": "^3.4.2",
+    "extract-loader": "^4.0.3",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "purgecss-whitelister": "^2.4.0",
+    "sass-loader": "^8.0.2",
+    "uncss-webpack-plugin": "^0.2.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.10"
+  }
+}
