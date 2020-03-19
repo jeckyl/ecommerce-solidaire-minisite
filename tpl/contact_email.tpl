@@ -50,10 +50,6 @@
         <td>{{VILLE}}</td>
     </tr>
     <tr>
-        <td>Pays</td>
-        <td>{{PAYS}}</td>
-    </tr>
-    <tr>
         <td>Commentaires</td>
         <td>{{COMMENTAIRES}}</td>
     </tr>

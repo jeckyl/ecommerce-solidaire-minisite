@@ -9,7 +9,7 @@ Mini site ecommerce solidaire
 1. `cd _dev`
 1. `npm i`
 1. `npm run build`
-1. Open http://localhost
+1. Open http://localhost/index.html
 
 ## Compilation sass/js
 1. `npm run build`

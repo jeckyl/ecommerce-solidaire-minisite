@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="preload" href="assets/app.js" as="script">
-    <link rel="preload" href="assets/app.js" as="style">
+    <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
 <!--[if IE]>
@@ -101,12 +101,25 @@
                             <label for="email" class="col-form-label">E-mail *</label>
                             <input type="email" autocomplete="off" class="form-control" id="email" name="email" required />
                         </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-7">
+                        <div class="form-row align-items-end">
+                            <div class="form-group col-md-2">
+                                <label for="statut">Statut *</label>
+                                <select class="custom-select custom-select-md pb-2" name="statut" id="statut" required>
+                                    <option value="">-</option>
+                                    <option value="SARL">SARL</option>
+                                    <option value="SASU">SASU</option>
+                                    <option value="SAS">SAS</option>
+                                    <option value="EURL">EURL</option>
+                                    <option value="SA">SA</option>
+                                    <option value="Micro">Micro/AE</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
                                 <label for="rs" class="col-form-label">Raison sociale *</label>
                                 <input type="text" autocomplete="off" class="form-control" id="rs" name="rs" required />
                             </div>
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-md-4">
                                 <label for="siren" class="col-form-label">Siren *</label>
                                 <input type="text" autocomplete="off" placeholder="Ex : 451 789 356" class="form-control" id="siren" name="siren" pattern="[0-9]{3}[ \.\-]?[0-9]{3}[ \.\-]?[0-9]{3}" required />
                             </div>
@@ -126,8 +139,8 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-3">
-                                <label for="cp" class="col-form-label">Code postal *</label>
-                                <input type="text" autocomplete="off" class="form-control" id="cp" name="cp" required />
+                                <label for="postcode" class="col-form-label">Code postal *</label>
+                                <input type="text" autocomplete="off" class="form-control" id="postcode" name="postcode" required />
                             </div>
                             <div class="form-group col-md-9">
                                 <label for="city" class="col-form-label">Ville *</label>
@@ -137,22 +150,6 @@
                         <div class="form-group">
                             <label for="description" class="col-form-label">Parlez-nous de vous *</label>
                             <textarea class="form-control" rows="6" id="description" name="description" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="postepro">Avez-vous un compte à La Poste ?</label>
-                            <select class="custom-select custom-select-md mb-3" name="postepro" id="postepro" required>
-                                <option value="">-</option>
-                                <option value="0">Non</option>
-                                <option value="1">Oui</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="files">Pouvez vous fournir un fichier excel de vos produits ? des photos ?</label>
-                            <select class="custom-select custom-select-md mb-3" name="files" id="files" required>
-                                <option value="">-</option>
-                                <option value="0">Non</option>
-                                <option value="1">Oui</option>
-                            </select>
                         </div>
                         <div class="form-check">
                             <input type="hidden" name="gpdr" value="0" />
@@ -169,7 +166,6 @@
     </section>
 </main>
 
-<link rel="stylesheet" href="assets/app.css">
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 <script src="assets/app.js"></script>

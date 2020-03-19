@@ -17,19 +17,18 @@ $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $headers .= "From:".$from;
 
 $variables = array(
-    'NOM' => trim($_POST['nom']),
-    'PRENOM' => trim($_POST['prenom']),
-    'TELEPHONE' => trim($_POST['telephone']),
+    'NOM' => trim($_POST['lastname']),
+    'PRENOM' => trim($_POST['firstname']),
+    'TELEPHONE' => trim($_POST['phone']),
     'EMAIL' => trim($_POST['email']),
-    'SOCIETE' => trim($_POST['societe']),
+    'SOCIETE' => trim($_POST['rs']),
     'SIREN' => trim($_POST['siren']),
-    'SALARIES' => trim($_POST['salaries']),
+    'SALARIES' => trim($_POST['count']),
     'STATUT' => trim($_POST['statut']),
-    'ADRESSE' => trim($_POST['adresse']),
-    'CP' => trim($_POST['cp']),
-    'VILLE' => trim($_POST['ville']),
-    'PAYS' => trim($_POST['pays']),
-    'COMMENTAIRES' => trim($_POST['commentaires']),
+    'ADRESSE' => trim($_POST['address']),
+    'CP' => trim($_POST['postcode']),
+    'VILLE' => trim($_POST['city']),
+    'COMMENTAIRES' => trim($_POST['description'])
 );
 
 $message = preg_replace_callback('/{{([a-zA-Z0-9\_\-]*?)}}/i',
