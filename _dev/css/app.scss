@@ -1,5 +1,7 @@
 @import "var";
 @import "~bootstrap/scss/bootstrap";
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 
 .c-card{
   margin-top: 50px;
@@ -48,6 +50,20 @@ min-height: 200px}
 }
 
 
+#form-container {
+  background-color: #a1daf2;
+  padding: 4rem 0;
+}
 
-
-
+.form-control, .custom-select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $primary;
+  border-radius: 0;
+}
+.form-control:focus, .custom-select:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $primary;
+  border-radius: 0;
+}
