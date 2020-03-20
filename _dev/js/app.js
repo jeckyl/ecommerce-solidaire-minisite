@@ -21,6 +21,8 @@ window.$ = window.jQuery = require('jquery');
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
+                } else {
+                    form.classList.add('is-validate');
                 }
                 form.classList.add('was-validated');
             }, false);
@@ -31,7 +33,7 @@ window.$ = window.jQuery = require('jquery');
 })();
 
 $(document).ready(function () {
-    $("#contact-form").submit(function (e) {
+    $("#form-container").on('submit', '#contact-form.is-validate', function (e) {
         e.preventDefault(); // avoid to execute the actual submit of the form.
 
         var form = $(this);

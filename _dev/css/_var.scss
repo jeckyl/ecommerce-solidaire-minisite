@@ -1,5 +1,5 @@
 $body-bg: white;
-$primary: #222b42;
+$primary: #332929;
 
 $body-color: $primary;
 
@@ -14,5 +14,6 @@ $h2-font-size: 2rem;
 $input-btn-focus-width: 0;
 $input-padding-x: 0;
 $input-color: #f8f9fa !default;
-
 $custom-forms-transition: none;
+$form-feedback-icon-valid: none;
+$form-feedback-icon-invalid: none;

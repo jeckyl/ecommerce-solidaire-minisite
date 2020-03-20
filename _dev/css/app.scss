@@ -55,17 +55,15 @@ min-height: 200px}
   padding: 4rem 0;
 }
 
-.form-control, .custom-select {
+.form-control {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid $white;
   border-radius: 0;
 }
-.form-control:focus, .custom-select:focus {
+.form-control:focus {
   background-color: $primary;
-  border: none;
   border-bottom: 2px solid $white;
-  border-radius: 0;
 }
 
 #intro {
