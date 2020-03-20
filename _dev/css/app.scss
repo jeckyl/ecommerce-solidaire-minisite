@@ -3,53 +3,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 
-.c-card{
-  margin-top: 50px;
-  padding: $spacer*2;
-}
-.c-card__content{
-  background: #fff;
-  padding: $spacer*2 $spacer;
-
-}
-.c-card__img{
-  background: url('../img/bg2.jpg') no-repeat center center;
-  background-size: cover;
-  min-height: 20vh;
-  //height: 100%;
-}
-///responsive
-@include media-breakpoint-up(lg) {
-  .u-left-radius{
-    border-top-left-radius:15px;
-    border-bottom-left-radius:15px;
-  }
-  .u-right-radius{
-    border-top-right-radius:15px;
-    border-bottom-right-radius:15px;
-  }
-
-}
-@include media-breakpoint-down(lg) {
-.c-card__header{
-
-}
-  .c-card__img{
-min-height: 200px}
-}
-@include media-breakpoint-down(sm) {
-  .c-card{
-    margin-top: 20px;
-    padding: $spacer*2 $spacer;
-  }
-}
-
-///////utilities
-.u-bg-w{
-  background: #fff;
-}
-
-
 #form-container {
   background-color: $primary;
   padding: 4rem 0;
@@ -73,4 +26,53 @@ min-height: 200px}
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.1);
   background-position: center;
+}
+
+#teams .row > * {
+  border: 1rem solid $primary;
+  padding: 0.5rem;
+  text-decoration: none;
+  background: $primary;
+  color: $white;
+  transition : border 100ms;
+}
+#teams .row > a:hover {
+  border-color: $white;
+}
+#teams .row > *:nth-child(2n) {
+  border-color: $white;
+  background: $white;
+  color: $primary;
+}
+#teams .row > a:nth-child(2n):hover {
+  border-color: $primary;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+      }
+    }
+  }
+
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (100%: 100, auto: auto) {
+      .mw#{$infix}-#{$abbrev} {
+        max-width: #{$prop} !important;
+      }
+      .mh#{$infix}-#{$abbrev} {
+        max-height: #{$prop} !important;
+      }
+    }
+  }
 }
