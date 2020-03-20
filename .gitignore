@@ -202,5 +202,5 @@ fabric.properties
 /.idea
 
 # Compiled files
-assets/**
-!assets/.htaccess
+#assets/**
+#!assets/.htaccess
