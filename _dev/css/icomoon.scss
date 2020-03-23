@@ -42,7 +42,9 @@
 }
 
 .icons-stack-1x,
-.icons-stack-2x {
+.icons-stack-2x,
+.icons-stacks-3x,
+.icons-stacks-4x {
   left: 0;
   position: absolute;
   text-align: center;
@@ -52,7 +54,6 @@
 .icons-stack-1x {
   line-height: inherit;
 }
-
 .icons-stack-2x {
   font-size: 2em;
 }
@@ -62,7 +63,9 @@
 .icons-stack-3x {
   font-size: 3em;
 }
-
+.icons-stack-4x {
+  font-size: 4em;
+}
 .icon-stopwatch:before {
   content: "\e952";
 }

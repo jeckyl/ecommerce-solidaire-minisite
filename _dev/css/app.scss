@@ -2,8 +2,8 @@
 @import "icomoon";
 @import "~bootstrap/scss/bootstrap";
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
-
+//@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300,700&family=Public+Sans:ital,wght@0,200;0,400;0,700;1,700&family=Raleway:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap");
 @font-face {
   font-family: "north_avellionregular";
   src: url("fonts/north_avellion-webfont.woff2") format("woff2"),
@@ -20,6 +20,9 @@
   font-style: normal;
 }
 
+h5 {
+  font-family: "rankings_capsregular";
+}
 #form-container {
   background-color: $primary;
   padding: 4rem 0;
@@ -35,7 +38,6 @@
   background-color: $primary;
   border-bottom: 2px solid $white;
 }
-
 header {
   background-color: $info;
   > div {
