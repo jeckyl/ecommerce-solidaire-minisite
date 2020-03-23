@@ -19,7 +19,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+h5 {
+  font-family: "rankings_capsregular";
+}
 #form-container {
   background-color: $primary;
   padding: 4rem 0;
@@ -35,7 +37,6 @@
   background-color: $primary;
   border-bottom: 2px solid $white;
 }
-
 header {
   background-color: $info;
   > div {
