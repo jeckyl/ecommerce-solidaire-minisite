@@ -1,4 +1,69 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap);/*!
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap);@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?nienar");
+  src: url("fonts/icomoon.eot?nienar#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?nienar") format("truetype"), url("fonts/icomoon.woff?nienar") format("woff"), url("fonts/icomoon.svg?nienar#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icons-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em; }
+
+.icons-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em; }
+
+.icons-stack-1x,
+.icons-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+
+.icons-stack-1x {
+  line-height: inherit; }
+
+.icons-stack-2x {
+  font-size: 2em; }
+
+.icon-stopwatch:before {
+  content: "\e952"; }
+
+.icon-cogs:before {
+  content: "\e995"; }
+
+.icon-gift:before {
+  content: "\e99f"; }
+
+.icon-user-md:before {
+  content: "\f0f0"; }
+
+.icon-circle:before {
+  content: "\f111"; }
+
+.icon-hand-pointer-o:before {
+  content: "\f25a"; }
+
+/*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -7241,12 +7306,12 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom: 2px solid #fff; }
 
 header {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("img/bg.jpg");
-  background-size: auto, cover;
+  height: 417px;
+  background-image: url("img/ecommerceSolidaireFOP.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-position: center; }
+  background-color: #60B4D8;
+  background-position: top; }
 
 #teams .row > * {
   border: 1rem solid #332929;

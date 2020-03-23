@@ -1,4 +1,5 @@
 @import "var";
+@import "icomoon";
 @import "~bootstrap/scss/bootstrap";
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
@@ -20,12 +21,12 @@
 }
 
 header {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.71), rgba(0,0,0,0.71)), url("img/bg.jpg");
-  background-size: auto, cover;
+  height: 417px;
+  background-image: url("img/ecommerceSolidaireFOP.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-position: center;
+  background-color: #60B4D8;
+  background-position: top;
 }
 
 #teams .row > * {
