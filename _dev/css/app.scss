@@ -2,7 +2,23 @@
 @import "icomoon";
 @import "~bootstrap/scss/bootstrap";
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
+
+@font-face {
+  font-family: "north_avellionregular";
+  src: url("fonts/north_avellion-webfont.woff2") format("woff2"),
+    url("fonts/north_avellion-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rankings_capsregular";
+  src: url("fonts/rankings_caps-webfont.woff2") format("woff2"),
+    url("fonts/rankings_caps-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 #form-container {
   background-color: $primary;
@@ -21,12 +37,65 @@
 }
 
 header {
-  height: 417px;
-  background-image: url("img/ecommerceSolidaireFOP.png");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: #60B4D8;
-  background-position: top;
+  background-color: $info;
+  > div {
+    min-height: 390px;
+    div {
+      z-index: 200;
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+
+      position: absolute;
+
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+
+      background-size: 23%;
+    }
+    &:before {
+      top: -20px;
+      background-image: url("img/main.svg");
+      background-position: top left;
+    }
+    &:after {
+      bottom: -60px;
+      background-image: url("img/main2.svg");
+      background-position: bottom left;
+    }
+
+    h2 {
+      font-family: "rankings_capsregular";
+      color: $body-bg;
+
+      font-size: 2.5rem;
+
+      span {
+        font-family: "north_avellionregular";
+        font-size: 3em;
+        line-height: 3.3rem;
+
+        display: inline-block;
+        @include media-breakpoint-down(xs) {
+          padding-bottom: 0px;
+        }
+      }
+      background-image: url("img/preston.svg");
+      background-position: right top;
+      padding-right: 45px;
+      padding-top: 5px;
+      background-repeat: no-repeat;
+      background-size: 10%;
+      @include media-breakpoint-down(xs) {
+        font-size: 1.5rem;
+        padding-right: 25px;
+      }
+    }
+  }
 }
 
 #teams .row > * {
@@ -35,7 +104,7 @@ header {
   text-decoration: none;
   background: $primary;
   color: $white;
-  transition : border 100ms;
+  transition: border 100ms;
 }
 #teams .row > a:hover {
   border-color: $white;
@@ -59,7 +128,9 @@ header {
 
     @each $prop, $abbrev in (width: w, height: h) {
       @each $size, $length in $sizes {
-        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+        .#{$abbrev}#{$infix}-#{$size} {
+          #{$prop}: $length !important;
+        }
       }
     }
   }
@@ -80,4 +151,8 @@ header {
 
 #sponsors img {
   height: 50px !important;
+}
+
+.text-blue {
+  color: #60b4d8;
 }
