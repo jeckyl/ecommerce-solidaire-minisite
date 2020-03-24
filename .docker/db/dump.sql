@@ -43,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `inscriptions` (
   `ville` varchar(255) NOT NULL,
   `commentaires` mediumtext NOT NULL,
   `admin` text NOT NULL,
+  `slug` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL COMMENT 'identifiant boutique'
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
