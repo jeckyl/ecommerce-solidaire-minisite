@@ -204,3 +204,6 @@ fabric.properties
 # Compiled files
 #assets/**
 #!assets/.htaccess
+
+# Composer
+/vendor

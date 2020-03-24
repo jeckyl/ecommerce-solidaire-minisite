@@ -1,0 +1,9 @@
+{
+    "name": "friends-of-presta/ecommerce-solidaire-minisite",
+    "type": "project",
+    "description": "Mini site ecommerce solidaire",
+    "require": {
+        "php": "^7.1",
+        "vlucas/phpdotenv": "^4.1"
+    }
+}
