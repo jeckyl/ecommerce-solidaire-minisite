@@ -2,8 +2,8 @@
 require 'vendor/autoload.php';
 
 $message_to_client = file_get_contents("tpl/contact_email.tpl");
-$from = getenv('MAIL_FROM');
-$to = getenv('MAIL_TO');
+$from = 'contact@ecommerce-solidaire.fr';
+$to = 'contact@ecommerce-solidaire.fr';
 // pour tests
 //$from = 'peter.julia@web-rd-info.fr';
 //$to = 'peter.julia@web-rd-info.fr';
