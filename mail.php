@@ -56,5 +56,8 @@ $insert = "INSERT INTO inscriptions SET";
 foreach ($variables as $k => $v) {
     $insert .= ($k == key($variables) ? "" : ",") . " `" . strtolower($k) . "` = " . $dbh->quote($v);
 }
-
-$dbh->exec($insert);
+try {
+    $dbh->exec($insert);
+} catch (PDOException $e) {
+    echo 'Insert échouée : ' . $e->getMessage();
+}
