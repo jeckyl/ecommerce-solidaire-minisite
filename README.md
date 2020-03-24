@@ -8,6 +8,7 @@ If you already have php/mysql/npm, don't launch docker stuff.
 1. `docker-compose build --no-cache --pull`
 1. `docker-compose up -d`
 1. `docker-compose exec web bash`
+1. `composer install`
 1. `cd _dev`
 1. `npm i`
 1. `npm run build`
