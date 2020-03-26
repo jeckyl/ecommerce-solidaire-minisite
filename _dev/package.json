@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
     "build": "webpack --mode production --watch",
     "watch": "webpack --watch --progress"
   },
