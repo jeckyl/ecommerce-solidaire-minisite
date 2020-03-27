@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Peter
- * Date: 18/03/2020
- * Time: 16:02
- */
+require 'vendor/autoload.php';
+
 $message_to_client = file_get_contents("tpl/contact_email.tpl");
 $from = 'contact@ecommerce-solidaire.fr';
 $to = 'contact@ecommerce-solidaire.fr';
@@ -41,3 +37,24 @@ if (!mail($to, $subject, $message, $headers)) {
 } else {
     print "success";
 }
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+/* Connexion à une base MySQL avec l'invocation de pilote */
+$dsn = getenv('DB_CONNECTION') . ':dbname=' . getenv('DB_DATABASE') . ';host=' . getenv('DB_HOST');
+$user = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+
+try {
+    $dbh = new PDO($dsn, $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+} catch (PDOException $e) {
+    echo 'Connexion échouée : ' . $e->getMessage();
+}
+
+$insert = "INSERT INTO inscriptions SET";
+foreach ($variables as $k => $v) {
+    $insert .= ($k == key($variables) ? "" : ",") . " `" . strtolower($k) . "` = " . $dbh->quote($v);
+}
+
+$dbh->exec($insert);

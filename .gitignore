@@ -204,5 +204,8 @@ fabric.properties
 # Compiled files
 #assets/**
 #!assets/.htaccess
-/assets/fonts/nhlcolor.woff
-/assets/fonts/nhlcolor.woff2
+#assets/fonts/nhlcolor.woff
+#assets/fonts/nhlcolor.woff2
+
+# Composer
+/vendor
