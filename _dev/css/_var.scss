@@ -1,8 +1,12 @@
 $body-bg: white;
-$primary: #332929;
-$info: #60b4d8;
-
+$primary: black;
+$secondary: #60b4d8;
 $body-color: $primary;
+$input-border-color: $secondary;
+$input-focus-width: 0;
+$input-focus-box-shadow: none;
+$border-radius: 0;
+$btn-padding-x: 1.5rem !default;
 
 $enable-responsive-font-sizes: true;
 
@@ -14,9 +18,35 @@ $headings-font-family: "Farro", sans-serif;
 $h1-font-size: 3rem;
 $h2-font-size: 2rem;
 
-$input-btn-focus-width: 0;
-$input-padding-x: 0;
-$input-color: #f8f9fa !default;
-$custom-forms-transition: none;
-$form-feedback-icon-valid: none;
-$form-feedback-icon-invalid: none;
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+                (
+                        0: 0,
+                        "0-25": ($spacer * .25),
+                        "0-5": ($spacer * .5),
+                        "0-75": ($spacer * .75),
+                        1: $spacer,
+                        "1-5": ($spacer * 1.5),
+                        2: ($spacer * 2),
+                        "2-5": ($spacer * 2.5),
+                        3: ($spacer * 3),
+                        4: ($spacer * 4),
+                        5: ($spacer * 5),
+                        6: ($spacer * 6),
+                        7: ($spacer * 7),
+                        8: ($spacer * 8),
+                        9: ($spacer * 9),
+                        10: ($spacer * 10),
+                        11: ($spacer * 11),
+                        12: ($spacer * 12),
+                        13: ($spacer * 13),
+                        14: ($spacer * 14),
+                        15: ($spacer * 15),
+                        20: ($spacer * 20),
+                        25: ($spacer * 25),
+                        30: ($spacer * 30),
+                ),
+                $spacers
+);

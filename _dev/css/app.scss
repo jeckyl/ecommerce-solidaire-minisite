@@ -1,9 +1,7 @@
 @import "var";
-@import "icomoon";
 @import "~bootstrap/scss/bootstrap";
 // Fonts
-//@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Farro:wght@300,700&family=Public+Sans:ital,wght@0,200;0,400;0,700;1,700&family=Raleway:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@100,200,300,400,500,600,700,800,900&family=Raleway:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap");
 @font-face {
   font-family: "north_avellionregular";
   src: url("fonts/north_avellion-webfont.woff2") format("woff2"),
@@ -19,58 +17,44 @@
   font-weight: normal;
   font-style: normal;
 }
-h5 {
+
+.ff-rankings-caps {
   font-family: "rankings_capsregular";
 }
-h5 {
-  font-family: "rankings_capsregular";
-}
-#form-container {
-  background-color: $primary;
-  padding: 4rem 0;
+.ff-north-avellion {
+  font-family: "north_avellionregular";
 }
 
-.form-control {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid $white;
-  border-radius: 0;
+.text-size-2-5 {
+  font-size: 2.5rem;
 }
-.form-control:focus {
-  background-color: $primary;
-  border-bottom: 2px solid $white;
+.text-size-3 {
+  font-size: 3rem;
 }
+
+.list-hyphens li::before {
+  content: "- ";
+}
+
+h3 {
+  line-height: $h3-font-size * 1.5;
+}
+
+#form-container {
+  background-color: $gray-200;
+}
+
 header {
-  background-color: $info;
   > div {
     min-height: 390px;
     div {
       z-index: 200;
     }
-    &:before,
-    &:after {
-      content: "";
-      display: block;
 
-      position: absolute;
-
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-
-      background-size: 23%;
-    }
-    &:before {
-      top: -20px;
-      background-image: url("img/main.svg");
-      background-position: top left;
-    }
-    &:after {
-      bottom: -60px;
-      background-image: url("img/main2.svg");
-      background-position: bottom left;
-    }
+    background-image: url("img/logoEntete.svg");
+    background-position: 0 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 
     h2 {
       font-family: "rankings_capsregular";
@@ -88,38 +72,47 @@ header {
           padding-bottom: 0px;
         }
       }
-      background-image: url("img/preston.svg");
-      background-position: right top;
-      padding-right: 45px;
-      padding-top: 5px;
-      background-repeat: no-repeat;
-      background-size: 10%;
-      @include media-breakpoint-down(xs) {
-        font-size: 1.5rem;
-        padding-right: 25px;
+
+      &::after {
+        content: " ";
+        background-image: url("img/logo/fop.jpg");
+        background-position: right top;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        @include media-breakpoint-down(xs) {
+          font-size: 1.5rem;
+          padding-right: 25px;
+        }
       }
     }
   }
 }
 
-#teams .row > * {
-  border: 1rem solid $primary;
-  padding: 0.5rem;
-  text-decoration: none;
-  background: $primary;
-  color: $white;
-  transition: border 100ms;
+label {
+  font-style: italic;
 }
-#teams .row > a:hover {
-  border-color: $white;
+
+.h-underline-secondary {
+  &::after {
+    content: " ";
+    display: block;
+    margin-top: 0.75rem;
+    width: 10rem;
+    border-bottom: $secondary 3px solid;
+  }
 }
-#teams .row > *:nth-child(2n) {
-  border-color: $white;
-  background: $white;
-  color: $primary;
+.h-underline-secondary.text-center::after {
+  margin-left: auto;
+  margin-right: auto;
 }
-#teams .row > a:nth-child(2n):hover {
-  border-color: $primary;
+
+
+#teams > a::before, #teams > span::before {
+  content: "#";
+  font-weight: bold;
 }
 
 #app {
@@ -154,9 +147,5 @@ header {
 }
 
 #sponsors img {
-  height: 50px !important;
-}
-
-.text-blue {
-  color: #60b4d8;
+  max-height: 50px !important;
 }

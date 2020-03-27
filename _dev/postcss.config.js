@@ -11,11 +11,7 @@ module.exports = {
                     './../*.html'
                 ],
                 whitelist: [
-                    'lazyloaded', 'fade', 'show', 'modal-backdrop'
-                    // ...whitelister([
-                    //     './assets/sass/common/_syntax.scss',
-                    //     './assets/sass/components/_code.scss',
-                    // ]),
+                    //'lazyloaded', 'fade', 'show', 'modal-backdrop'
                 ],
             })
         : [],
