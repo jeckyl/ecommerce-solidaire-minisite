@@ -46,16 +46,6 @@ h3 {
 
 header {
   > div {
-    min-height: 390px;
-    div {
-      z-index: 200;
-    }
-
-    background-image: url("img/logoEntete.svg");
-    background-position: 0 0;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-
     h2 {
       font-family: "rankings_capsregular";
       color: $body-bg;
@@ -70,21 +60,6 @@ header {
         display: inline-block;
         @include media-breakpoint-down(xs) {
           padding-bottom: 0px;
-        }
-      }
-
-      &::after {
-        content: " ";
-        background-image: url("img/logo/fop.jpg");
-        background-position: right top;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        @include media-breakpoint-down(xs) {
-          font-size: 1.5rem;
-          padding-right: 25px;
         }
       }
     }

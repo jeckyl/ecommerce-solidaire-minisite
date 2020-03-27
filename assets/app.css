@@ -3522,7 +3522,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: #60b4d8;
   border-radius: 0; }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -3530,7 +3530,7 @@ input[type="button"].btn-block {
   .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: 0.5rem;
-    color: #6c757d;
+    color: white;
     content: "/"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -3540,7 +3540,7 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .breadcrumb-item.active {
-  color: #6c757d; }
+  color: white; }
 
 .pagination {
   display: flex;
@@ -11309,39 +11309,18 @@ h3 {
 #form-container {
   background-color: #e9ecef; }
 
-header > div {
-  min-height: 390px;
-  background-image: url("img/logoEntete.svg");
-  background-position: 0 0;
-  background-size: auto 100%;
-  background-repeat: no-repeat; }
-  header > div div {
-    z-index: 200; }
-  header > div h2 {
-    font-family: "rankings_capsregular";
-    color: white;
-    font-size: 2.5rem; }
-    header > div h2 span {
-      font-family: "north_avellionregular";
-      font-size: 3em;
-      line-height: 3.3rem;
-      display: inline-block; }
-      @media (max-width: 575.98px) {
-        header > div h2 span {
-          padding-bottom: 0px; } }
-    header > div h2::after {
-      content: " ";
-      background-image: url("img/logo/fop.jpg");
-      background-position: right top;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-repeat: no-repeat;
-      background-size: 100%; }
-      @media (max-width: 575.98px) {
-        header > div h2::after {
-          font-size: 1.5rem;
-          padding-right: 25px; } }
+header > div h2 {
+  font-family: "rankings_capsregular";
+  color: white;
+  font-size: 2.5rem; }
+  header > div h2 span {
+    font-family: "north_avellionregular";
+    font-size: 3em;
+    line-height: 3.3rem;
+    display: inline-block; }
+    @media (max-width: 575.98px) {
+      header > div h2 span {
+        padding-bottom: 0px; } }
 
 label {
   font-style: italic; }
