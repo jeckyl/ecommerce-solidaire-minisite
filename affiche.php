@@ -4,9 +4,12 @@
 $url = (isset($_GET['url']) && $_GET['url'])?$_GET['url']:'';
 
 if (!$url) {
-    die('Rajoutez l\'url ?url=');
+    echo '<h1>Une erreur est survenue</h1>';
+    echo 'Rajoutez l\'url ?url=';
+    echo '<br>';
+    echo 'Exemple : https://www.ecommerce-solidaire.fr/affiche.php?url=https://tartines-et-gourmandises.ecommerce-solidaire.fr/';
+    exit;
 }
-
 
 ?>
 <!doctype html>
@@ -35,11 +38,10 @@ if (!$url) {
 </head>
 
 <body>
-    <div>
-        <h1>Commandez en ligne</h1>
+    <div style="text-align:center;">
+        <h1>Commandez nos produits en ligne</h1>
         <h2>sur <?php echo htmlentities(trim(str_replace('https://','', $url),'/'))?></h2>
         <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=<?php echo urlencode($url)?>&choe=UTF-8"/>
-        <p>Site ecommerce proposé gratuitement par l'initiative e-Commerce Solidaire par Friends-of-Presta<br/>
-        ecommerce-solidaire.fr
+        <p>Site ecommerce proposé gratuitement par l'initiative e-Commerce Solidaire<br> par Friends-of-Presta ecommerce-solidaire.fr
     </div>
 </body>
