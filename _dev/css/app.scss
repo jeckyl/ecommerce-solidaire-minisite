@@ -31,7 +31,9 @@
 .text-size-3 {
   font-size: 3rem;
 }
-
+.small {
+  font-size: $small-font-size;
+}
 .list-hyphens li::before {
   content: "- ";
 }
@@ -63,6 +65,16 @@ header {
         }
       }
     }
+    img {
+      top: -23%;
+      @include media-breakpoint-down(md) {
+        position: relative !important;
+      }
+      @include media-breakpoint-down(xs) {
+        position: relative !important;
+        max-height: 15vh;
+      }
+    }
   }
 }
 
@@ -76,7 +88,7 @@ label {
     display: block;
     margin-top: 0.75rem;
     width: 10rem;
-    border-bottom: $secondary 3px solid;
+    border-bottom: $tertiary 3px solid;
   }
 }
 .h-underline-secondary.text-center::after {
@@ -84,8 +96,8 @@ label {
   margin-right: auto;
 }
 
-
-#teams > a::before, #teams > span::before {
+#teams > a::before,
+#teams > span::before {
   content: "#";
   font-weight: bold;
 }
@@ -123,4 +135,8 @@ label {
 
 #sponsors img {
   max-height: 50px !important;
+}
+
+.text-tertiary {
+  color: $tertiary;
 }

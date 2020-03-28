@@ -46,14 +46,14 @@
 
 <div id="app">
     <header class="w-100 d-flex align-items-start">
-        <div class="container-lg position-relative overflow-hidden">
+        <div class="container-lg position-relative">
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-fluid" style="max-height: 400px;" src="assets/img/logo.svg" alt="Logo" />
+                    <img class="img-fluid position-absolute"  src="assets/img/logo.svg" alt="Logo" />
                 </div>
                 <div class="col-lg-7 position-relative">
-                    <div class="p-2 mt-md-2">
-                        <h1 class="h1 text-secondary font-weight-normal ml-n2">EcommerceSolidaire</h1>
+                    <div class="p-2 mt-md-2 mb-md-5">
+                        <h1 class="h1 text-secondary font-weight-bold ml-n2">EcommerceSolidaire</h1>
                         <h2 class="d-sm-inline-flex text-primary ml-1">
                             Friends <span>of</span> Presta
                             <img src="assets/img/logo/fop.jpg" class="rounded-circle" height="40" width="40" alt="Friends-of-presta" />
@@ -71,8 +71,11 @@
 
     <main>
         <section class="container-lg mt-4">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row">                
+                <div class="col-lg-6 d-md-block mt-n2 order-lg-2 mb-2">
+                    <img class="img-fluid" src="assets/img/bg-portable.svg" alt=""/>
+                </div>
+                <div class="col-lg-5 offset-1 order-md-1">
                     <div class="">
                         <h3 class="text-secondary h-underline-secondary">
                             Les objectifs d'e-commerce <span class="text-dark">solidaire</span>
@@ -107,18 +110,16 @@
                         <a href="#form-container" class="btn btn-secondary text-white">Je m'inscris gratuitement</a>
                     </div>
                 </div>
-                <div class="col-md-6 d-md-block d-none">
-                    <img class="img-fluid" src="assets/img/bg-portable.svg" alt=""/>
-                </div>
+
             </div>
         </section>
 
         <section class="container-lg mt-5">
             <div class="row align-items-center">
-                <div class="col-md-6 d-md-block d-none">
+                <div class="col-lg-6 d-md-block mb-2">
                     <img class="img-fluid" src="assets/img/bg-groupe.svg" alt=""/>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-5 offset-1">
                     <h3 class="text-secondary h-underline-secondary mb-2">
                         Continuez votre activite de vente de produits de première nécessité
                         <span class="text-dark">sans contacts physiques</span>
@@ -156,12 +157,12 @@
         </section>
 
 
-        <section class="container-lg mt-5">
+        <section class="container-lg my-5 py-5">
             <h3 class="text-uppercase font-weight-bold h4 text-center">
                 Les avantages d'un e-commerce de proximité full <span class="text-secondary">sans contact</span>
             </h3>
             <div class="row">
-                <div class="mt-2 col-md-3 col-6 d-flex align-items-center px-1 flex-fill flex-column">
+                <div class="mt-2 col-md-3 col-5 d-flex align-items-center px-1 flex-fill flex-column">
                     <img src="assets/img/icon-touches.svg" height="60" alt=""/>
                     <span class="mt-1 text-center">Commande et Paiement <span class="d-block text-secondary">sans contact physique</span></span>
                 </div>
@@ -182,7 +183,7 @@
 
         <section class="container-lg mt-5">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 offset-sm-1 offset-lg-0">
                     <h3 class="text-secondary h-underline-secondary mb-2">
                         Un site gratuit simple et efficace pour soutenir les <span class="text-dark">commerces de
                         proximite</span>
@@ -190,7 +191,7 @@
                 </div>
             </div>
             <div class="row flex-md-row flex-column-reverse">
-                <div class="col-md-6 mt-2 mt-md-0">
+                <div class="col-lg-5 mt-2 mt-md-0 offset-sm-1 offset-lg-0">
                     <p>
                         Nous proposons un site aux <strong>fonctionnalités essentielles que vous pourrez conserver
                         dans la durée :</strong>
@@ -218,7 +219,7 @@
                         <a class="btn btn-secondary text-white">Je regarde la démo</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 offset-md-1 mb-2">
                     <img class="img-fluid" src="assets/img/boutique-boulangerie.jpg" alt=""/>
                 </div>
             </div>
@@ -226,7 +227,7 @@
 
         <section class="container-lg mt-5">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-lg-5 offset-sm-1 offset-lg-0">
                     <h3 class="text-secondary h-underline-secondary mb-2">
                         Votre e-commerce de proximite <span class="text-dark">gratuit et en ligne en 24h</span>*
                     </h3>
@@ -254,7 +255,7 @@
                         <li>Vous pouvez conserver le site gratuitement jusqu'à 2 mois. après la fin du confinement.</li>
                     </ol>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 offset-md-1 mb-2">
                     <img class="img-fluid" src="assets/img/boutique-food.jpg" alt=""/>
                 </div>
             </div>
@@ -743,7 +744,7 @@
     </main>
 
 
-    <footer class="container-lg d-flex py-2">
+    <footer class="container-lg d-flex py-2 small">
         <div>© friends-of-Presta - 2020 - Une question ? contactez-nous par email :
             <script>document.write('<' + 'a' + ' ' + 'h' + 'r' + 'e' + 'f' + '=' + "'" + 'm' + 'a' + 'i' + 'l' + 't' + 'o' + '&' + '#' + '5' + '8' + ';' + 'c' + '&' + '#' + '3' + '7' +
                 ';' + '6' + '&' + '#' + '7' + '0' + ';' + 'n' + 't' + '%' + '&' + '#' + '5' + '4' + ';' + '1' + '&' + '#' + '3' + '7' + ';' + '6' + '&' + '#' + '5' +
