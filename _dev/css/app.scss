@@ -64,16 +64,25 @@ header {
           padding-bottom: 0px;
         }
       }
-    }
-    img {
-      top: -23%;
-      @include media-breakpoint-down(md) {
-        position: relative !important;
-      }
       @include media-breakpoint-down(xs) {
-        position: relative !important;
-        max-height: 15vh;
+        padding-bottom: 0px;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
       }
+    }
+  }
+  img.img-fluid {
+    top: -23%;
+    @include media-breakpoint-up(lg) {
+      position: absolute !important;
+    }
+  }
+  img:not(.rounded-circle) {
+    @include media-breakpoint-down(sm) {
+      width: 100% !important;
+    }
+    @include media-breakpoint-between(sm, md) {
+      width: 30% !important;
     }
   }
 }
