@@ -34,7 +34,7 @@ if (
     filter_var($variables['EMAIL'], FILTER_VALIDATE_EMAIL) === false OR
     empty($variables['SOCIETE']) OR
     !in_array($variables['SALARIES'], array('0-20', '21-50', '50-')) OR
-    !in_array($variables['STATUT'], array('SARL', 'SASU', 'SAS', 'EURL', 'Micro', 'Autre')) OR
+    !in_array($variables['STATUT'], array('SARL', 'SASU', 'SAS', 'EURL', 'EI', 'Micro', 'Autre')) OR
     empty($variables['CP']) OR
     empty($variables['VILLE']) OR
     empty($variables['COMMENTAIRES'])
