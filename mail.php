@@ -12,6 +12,25 @@ $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 $headers .= "From:".$from;
 
+// Merge default
+$_POST = array_merge(
+    array(
+        'lastname' => '',
+        'firstname' => '',
+        'phone' => '',
+        'email' => '',
+        'rs' => '',
+        'siren' => '',
+        'count' => '',
+        'statut' => '',
+        'address' => '',
+        'postcode' => '',
+        'city' => '',
+        'description' => '',
+    ),
+    $_POST
+);
+
 $variables = array(
     'NOM' => trim($_POST['lastname']),
     'PRENOM' => trim($_POST['firstname']),
@@ -27,6 +46,7 @@ $variables = array(
     'COMMENTAIRES' => trim($_POST['description'])
 );
 
+// Check variable
 if (
     empty($variables['NOM']) OR
     empty($variables['PRENOM']) OR
