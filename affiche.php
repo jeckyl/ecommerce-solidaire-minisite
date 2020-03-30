@@ -41,7 +41,7 @@ if (!$url) {
     <div style="text-align:center;">
         <h1>Commandez nos produits en ligne</h1>
         <h2>sur <?php echo htmlentities(trim(str_replace('https://','', $url),'/'))?></h2>
-        <img src="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=<?php echo urlencode($url)?>&choe=UTF-8"/>
+        <img src="https://chart.googleapis.com/chart?chs=547x547&cht=qr&chl=<?php echo urlencode($url)?>&choe=UTF-8"/>
         <p>Site ecommerce proposé gratuitement par l'initiative e-Commerce Solidaire<br> par Friends-of-Presta ecommerce-solidaire.fr
     </div>
 </body>
