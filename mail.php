@@ -27,6 +27,22 @@ $variables = array(
     'COMMENTAIRES' => trim($_POST['description'])
 );
 
+if (
+    empty($variables['NOM']) OR
+    empty($variables['PRENOM']) OR
+    empty($variables['TELEPHONE']) OR
+    filter_var($variables['EMAIL'], FILTER_VALIDATE_EMAIL) === false OR
+    empty($variables['SOCIETE']) OR
+    !in_array($variables['SALARIES'], array('0-20', '21-50', '50-')) OR
+    !in_array($variables['STATUT'], array('SARL', 'SASU', 'SAS', 'EURL', 'Micro', 'Autre')) OR
+    empty($variables['CP']) OR
+    empty($variables['VILLE']) OR
+    empty($variables['COMMENTAIRES'])
+) {
+    print "error";
+    die;
+}
+
 $message = preg_replace_callback('/{{([a-zA-Z0-9\_\-]*?)}}/i',
     function ($match) use ($variables) {
         return $variables[$match[1]];
