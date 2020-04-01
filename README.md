@@ -13,7 +13,7 @@ If you already have php/mysql/npm, don't launch docker stuff.
 1. `npm i`
 1. `npm run build`
 1. Rename .env.exemple to .env
-1. Open http://localhost/index.html
+1. Open http://localhost/
 
 ## Compilation sass/js
 1. `npm run build`
